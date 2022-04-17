@@ -1,7 +1,7 @@
 const Pedagogy=()=>{
     return(
         <>
-      <div className="container-fluid pedagogy mt-5 abt_bg_1">
+      <div className="container-fluid pedagogy abt_bg_1">
   <div className="layer2">
     <div className="container">
       <div className="row">

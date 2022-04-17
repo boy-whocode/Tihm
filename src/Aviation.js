@@ -4,24 +4,25 @@ import Course from "./Components/Courses/Course";
 import Footer from "./Components/Footer"
 import { CoursesLanding } from "./Components/Landing_Block"
 import {CoursesMainData} from "./Components/Data"
+import Contact from './Components/Contact';
 
 const Aviation =() =>{
-    return(
-        <>
-        <Menu 
-            color='white'
+    return (
+      <>
+        <Menu color="white" />
+        <Contact />
+
+        <CoursesLanding
+          class={CoursesMainData[1].class}
+          pageHeading={CoursesMainData[1].pageHeading}
         />
-        <CoursesLanding 
-        class={CoursesMainData[1].class}
-        pageHeading={CoursesMainData[1].pageHeading}
-        />
-        <AviationBlock 
-            img={CoursesMainData[1].img}
-            courseName={CoursesMainData[1].courseName}
-            courseDetail={CoursesMainData[1].courseDetail}
+        <AviationBlock
+          img={CoursesMainData[1].img}
+          courseName={CoursesMainData[1].courseName}
+          courseDetail={CoursesMainData[1].courseDetail}
         />
         <Footer />
-        </>
+      </>
     );
 }
 export default Aviation;
