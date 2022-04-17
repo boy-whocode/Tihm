@@ -34,7 +34,7 @@ const MainLanding = () =>{
 const AboutUsLanding=()=>{
   return(
     <>
-    <div className="container-fluid mb-5">
+    <div className="container-fluid px-0">
       <div className="about_us_head">
         <div className="container about_heading">
           <h3>About Us</h3>

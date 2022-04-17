@@ -15,11 +15,6 @@ function App() {
      <Route exact path="/Aviation" component={Aviation}/>
      <Route exact path="/ApplyOnline" component={ApplyOnline}/>
    </Switch>
-   {/* <Home />
-   <AboutUsMain />
-   <Courses />
-   <Aviation />
-   <ApplyOnline /> */}
    </>
   );
 }

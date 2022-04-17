@@ -183,6 +183,12 @@ button span{
   border: none;
   border-radius: 5px;
   text-transform: capitalize;
+  text-decoration: none;
+}
+.news button:hover{
+  background-color: red;
+  text-decoration: none;
+
 }
 .news a{
   text-decoration: none;
@@ -1177,8 +1183,10 @@ text-align: center;
   margin-bottom: 10px;
   overflow: hidden;
 }
+.course_details--expand{
+  height: auto;
+}
 .coursecard{
-  /* border: 1px solid red; */
   background-color: white;
   text-align: center;
   margin-top: 20px;
@@ -1206,11 +1214,12 @@ text-align: center;
   cursor: pointer;
   outline: none;
 }
+.coursecard button:hover{
+color: #2da6ae;
+
+}
 .about_course{
   width: 100%;
-}
-button:hover .course_details{
-  background-color: blue;
 }
 
 
@@ -1227,6 +1236,7 @@ button:hover .course_details{
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  padding: 0px 0px;
   /* height: 70vh; */
   z-index: -2;
 }
@@ -1467,6 +1477,20 @@ button:hover .course_details{
   animation-timing-function: linear;
 }
 
+@keyframes paper-plane-scoping {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  100% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    transform: translateY(75px);
+  }
+}
+
 @-webkit-keyframes paper-plane-scoping {
   0% {
     -webkit-transform: translateY(0px);
@@ -1490,6 +1514,44 @@ button:hover .course_details{
   animation: paper-plane-soaring 4s forwards infinite;
 }
 
+
+@keyframes paper-plane-soaring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
 @-webkit-keyframes paper-plane-soaring {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1630,6 +1692,32 @@ button:hover .course_details{
   -webkit-animation-duration: 20.5s;
   -moz-animation-duration: 20.5s;
   animation-duration: 20.5s;
+}
+
+
+@keyframes cloud-movement {
+  0% {
+    opacity: 0.1;
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+
+  10% {
+
+    opacity: 0.7;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+    -moz-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
 }
 
 @-webkit-keyframes cloud-movement {
